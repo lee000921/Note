@@ -177,3 +177,22 @@ const int *p = nullptr;//p是一个指向整型常量的指针
 constexpr int* q = nullptr;//q是一个指向整型的常量指针
 ```
 * constexpr把它所定义的对象置为了顶层const
+## 2.5 处理类型
+### 2.5.1 类型别名
+* 关键字typedef
+* 别名声明：把等号左侧的名字规定成等号右侧类型的别名
+    ```C++
+    using SI = sales_item;
+    ```
+#### 指针、常量和类型别名
+* Note： const pstring 是指向char的常量指针，而非指向常量字符的指针
+    ```C++ {.line-numbers}
+    typedef char *pstring;
+    const pstring cstr = 0;
+    const pstring *ps;
+    ```
+### 2.5.2 auto类型说明符
+
+
+
+
